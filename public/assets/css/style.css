@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+}
+
+#sidebar {
+    transition: width 0.5s ease; /* Suaviza a transição do sidebar */
+    flex-shrink: 0;
+}
+
+#main-content {
+    display: flex;
+    transition: margin-left 0.5s ease;
+}
+
+.container {
+    padding: 0 5%;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 105px;
+}
+
+.titulo strong {
+    color: #ecd447a2;
+}
+.contas {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    height: 100%;
+    background-color:  #ffffffd2;
+    border-radius: 15px;
+    height: 360px;
+    max-width: 100%;
+    width: 840px;
+}
+.conteudo-esquerda .conta-diaria{
+    flex-direction: row;
+}
+.conta-diaria-esquerda{
+    align-items: center;
+    justify-content: center;
+}
+.conta-diaria {
+    flex: 1 1 calc(50% - 20px); /* Cada card ocupa 50% da largura menos o gap */
+    max-width: 48%; /* Limita a largura máxima de cada card */
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+.cards {
+    width: 100%;
+    display: flex;
+    padding: 1rem 0 !important;
+}
+.card-valor{
+    display: flex;
+}
+.card-valor label{
+    margin-left: 4px;
+}
+.conta-diaria .item-variavel{
+    padding: 10px 0px 0px 10px;
+}
+.cards .cards-headers {
+    width: 330px;
+    height: 160px;
+    background-color: #2B9E4E;
+    display: block;
+    border-radius: 5px;
+}
+.cards .cards-headers:hover{
+    cursor: pointer;
+}
+.cards .cards-headers .cards-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem !important;
+}
+.conta-diaria-title{
+    white-space: nowrap;
+    font-size: 2rem !important;
+    font-weight: 1000px !important; 
+    color: #042940;
+    margin-right: 35px;
+    margin-top: -10px;
+}
+.conta-diaria-esquerda .conta-diaria-subtitle-esquerda{
+    align-items: center;
+    justify-content: center;
+    
+}
+.bottom-group .item-variavel{
+    align-items: center;
+    justify-content: center;
+}
+.bottom-group .bottom-text {
+    text-decoration: none;
+    color: green;
+}
+.cards .cards-headers .cards-top .card-number {
+    display: block;
+}
+.cards .cards-headers .cards-top .card-number p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.cards .cards-headers .cards-top .card-number .card-valor p{
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+.cards .cards-headers .cards-top .card-number .card-valor label{
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+.cards .cards-headers .cards-top .card-number .days p{
+    font-size: 1.0rem !important;
+    font-weight: 500 ;
+    display: flex;
+}
+.cards .cards-headers .cards-top .card-icon {
+    background-color: #2B9E4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.cards .cards-headers .cards-top .card-icon i{
+    font-size: 4.5rem;
+    color: #0000003b;
+    background-color: #2B9E4E;
+}
+.cards .cards-headers .card-type{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    font-size: 0.9rem;
+    background-color: #196832d5;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0.1rem !important;
+    color: whitesmoke;
+    
+}
+.cards .cards-headers .card-type label{
+    margin-left: 5px !important;
+    font-weight: 550;
+}
+.cards .cards-headers .card-type p, label{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.conta-diaria:not(h3){
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.direita{
+    margin-top: 5%;
+}
+.direita  .bottom-group .bottom-text {
+    color: red;
+}
+.direita .cards .cards-headers {
+    background-color: #B54848 ;
+}
+.direita .cards .cards-headers .card-type{
+    background-color: #833535;
+}
+.direita .cards .cards-headers .cards-top .card-icon{
+    background-color: #B54848;
+}
+.direita .cards .cards-headers .cards-top .card-icon i {
+    color: #0000003b;
+    background-color: #B54848;
+}
+
+/* divisão fim de contas diarias */
+
+.agenda{
+    height: 100%;
+    background-color:  #ffffffd2;
+    border-radius: 15px;
+    height: 360px;
+    max-width: 100%;
+    width: 840px;
+    margin-top: 2%;
+}
+.agenda .horarios .top-group{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem !important;
+    color: #042940;
+}
+.agenda .horarios .top-group .title {
+    font-size: 2rem;
+}
+.agenda .horarios .top-group .button-agenda button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 0;
+    background-color: #042940;
+    color: white;
+    height: 32px;
+    width: 300px;
+    padding: 0 1rem;
+    border: none;
+}
+.agenda .horarios .top-group .button-agenda button:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 4px 0.5px #42545f;
+    transition: all 0.05s ease-in-out;
+}
+.agenda .horarios .content-agenda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: -20px;
+}
+.agenda .horarios .content-agenda .title-agenda label {
+    font-weight: 450;
+    font-size: 1.1rem;
+}
+.agenda .horarios .content-agenda .group-agenda{
+    display: flex;
+    max-width: 100%;
+    width: 96%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px 0px;
+}
+.agenda .horarios .content-agenda .group-agenda .horario{
+    background-color: #B54848;
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 0.05px solid rgb(66, 66, 66);
+}
+.contas-fixas{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    width: 750px;
+    height: 740px; 
+    background-color: #ffffffd2;
+    border-radius: 15px;
+    margin-left: 2%;
+}
+.container-contas{
+    max-width: 700px;
+    width: 100%;
+
+}
+.contas-fixas .container-contas{
+    margin: 25px 0px 0px 25px;
+
+}
+.contas-fixas .title-fixo {
+    font-size: 2rem ;
+    font-weight: 1000px ; 
+    color: #042940;
+}
+.contas-fixas .container-contas .main-content .content-title{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 10px
+}
+.contas-fixas .container-contas .main-content .content-title span {
+    margin-right: 20px;
+}
+.contas-fixas .container-contas .main-content .content-title h4{
+    font-size: 1.2rem;
+    text-decoration:solid;
+}
+.contas-fixas .container-contas .main-content .content-title h4:not(:first-child){
+    margin-right: 15px;
+}
+.contas-fixas .container-contas .main-content .content-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:100%;
+    width: 95%;
+    border-bottom: 1px solid black;
+}
+
+.contas-fixas .container-contas .main-content .content-item .icons-item a:not(:last-child) {
+    padding-right: 2px;
+}
+.contas-fixas .container-contas .main-content .content-item .icons-item i{
+    color: rgb(221, 187, 33);
+    border: 1.5px solid black;
+    padding: 2px 2.5px 1.8px 2.5px;
+    border-radius: 5px;
+}
+.contas-fixas .container-contas .main-content .content-item .icons-item .second {
+    color: #B54848;
+    
+}
+.contas-fixas .container-contas .main-content .content-item .icons-item .third {
+    color: #808080;
+    
+}
+.tudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+}
+.tudo:not(:last-child){
+    display: flex;
+    flex-direction: column;
+}
+.tudo-direita{
+    float: right;
+}
+.tempo-agendamento{
+    display: flex;
+}
+
+/* fim */

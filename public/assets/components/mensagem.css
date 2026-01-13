@@ -1,0 +1,9 @@
+.alert-top-fixed {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    min-width: 320px;
+    max-width: 1200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}

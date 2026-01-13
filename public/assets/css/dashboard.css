@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+html, body {
+    overflow-x: hidden;
+}
+.full-content {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.title label{
+    color: #E18A52;
+    text-shadow: 3px 4px 17px rgba(0,0,0,0.15);
+}
+.data{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+.data i{
+    margin-top: 7px;
+    color: black;
+}
+.divisao{
+    display: flex;
+    padding: 1px;
+    width: 100%;
+    background: rgba(212, 212, 212, 0.753);
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.subtitle{
+    display: flex;
+}
+/* cards */
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+.card-1{
+    width: 20%;
+    min-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px -5px rgba(5, 62, 97, 1);
+    position: relative;
+    overflow: hidden;
+}
+.card-2{
+    width: 20%;
+    min-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(5, 62, 97, 1);
+    position: relative;
+    overflow: hidden;
+}
+.card-3{
+    width: 20%;
+    min-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(5, 62, 97, 1);
+    position: relative;
+    overflow: hidden;
+}
+.card-4{
+    width: 20%;
+    min-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(5, 62, 97, 1);
+    position: relative;
+    overflow: hidden;
+}
+.icone-1, .icone-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-22%, -59%);
+    z-index: 1;
+    opacity: 0.20;
+    color: rgba(5, 62, 97, 1);
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icone-2{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-18%, -59%);
+    z-index: 1;
+    opacity: 0.20;
+    color: rgba(5, 62, 97, 1);
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icone-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-16%, -59%);
+    z-index: 1;
+    opacity: 0.20;
+    color: rgba(5, 62, 97, 1);
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-1 .text{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+.card-2 .text{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+.card-3 .text{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+.card-4 .text{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+.text h4{
+    font-size: 2rem;
+}
+.bottom-card{
+    background-color: rgba(5, 62, 97, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 100;
+    opacity: 1;
+}
+.bottom-card i{
+    margin-bottom: 16px;
+    margin-left: 10px;
+}
+/* grafico */
+.graficos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+.grafico-clientes{
+    width: 48%;
+    height: 100%;
+}
+.grafico-contas-a-receber{
+    width: 48%;
+    height: 100%;
+}
+
+.agenda {
+    width: 100%;         
+    max-width: 1500px;  
+    margin: 0 auto;     
+    font-size: 1.2rem;   
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px -5px rgba(5, 62, 97, 1);
+    overflow: visible;
+    position: relative;
+    margin-bottom: 34px;
+    margin-top: 40px;
+}
+.quadras-lista {
+    padding: 32px 24px;
+}
+.quadras-lista h4{
+    color: black;
+    text-shadow: 3px 4px 17px rgba(0,0,0,0.15);
+    font-weight: 900;
+}
+.main-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 32px;
+}
+.relogio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -60%);
+    z-index: 1;
+    opacity: 0.20;
+    color: #E18A52;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-horario{
+    background-color: #E18A52;
+    display:  flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 56px;
+    width: 100%;
+    font-size: 1.2rem;
+    position: relative ;
+    z-index: 2;
+    margin-top: 16px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+.bottom-horario a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    opacity: 1;
+    gap: 12px;
+}
+.bottom-horario a span{
+    color: rgb(255, 255, 255);
+}
+.bottom-horario i{
+    margin-bottom: 0;
+    margin-left: 0;  
+    font-size: 1.2em; 
+    color: rgb(255, 255, 255);
+}
+.sem-agendamento{
+    margin-top: 20px;
+    min-height: 300px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 10px -7px rgb(0, 0, 0);
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.sem-agendamento i:not(:last-child){
+    color: rgba(0, 0, 0, 0.356);
+    font-size: 5rem;
+    margin-bottom: 40px;
+}
+.sem-agendamento a{
+    text-decoration: none;
+    color: black;
+}
+.sem-agendamento i:not(:first-child){
+    color: rgba(0, 0, 0, 0.356);
+}
+.bottom-text-sem-agendamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista-horarios{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 2px 3px 10px -7px rgb(0, 0, 0);
+    background-color: rgb(250, 250, 250);
+    padding: 5px;
+    position: relative ;
+    z-index: 2;
+}

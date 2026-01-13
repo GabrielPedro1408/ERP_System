@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#sidebar {
+    transition: width 0.5s ease; /* Suaviza a transição do sidebar */
+    flex-shrink: 0;
+}
+
+#main-content {
+    display: flex;
+    transition: margin-left 0.5s ease;
+}
+.container{
+    padding: 0 5%;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+}
+main{
+    display: flex;
+}
+#top-area{
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    flex-wrap: wrap; 
+    height: 100%;
+    background-color:  #ffffffd2;
+    border-radius: 15px;
+    height: 360px;
+    max-width: 100%;
+    width: 840px;
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+#sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+    height: calc(100vh - 60px); 
+    width: 15vw;
+    min-width: 0;
+
+    background-color: rgba(5, 62, 97, 1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+}
+#sidebar-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    padding: 12px 0;
+}
+
+#main-content {
+    flex: 1;
+    background: whitesmoke;
+    margin-left: 14.8vw;
+    margin-top: 60px; 
+    padding: 24px 0px 0px 0px;
+}   
+
+.full-content{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#side-items {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+}
+
+.side-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 1px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.esquerda{
+    display: flex;
+    margin-left: 20px;
+}
+
+.side-item.active {
+    background-color: #E18A52;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-item.active a {
+    color: white;
+    text-decoration: none;
+}
+
+.side-item:hover:not(.active){
+    background-color: #E18A52;
+}
+.side-item i{
+    color: white;
+}
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+
+.item-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    transition: width 0.6s ease;
+    color: white;
+}
+
+#sidebar .item-description {
+    width: 130px;
+    text-align: left;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.submenu-financeiro {
+    position: absolute;
+    list-style: none;
+    top: 0;
+    left: 100.3%;
+    background: rgb(5, 62, 99);
+    border-radius: 0px 8px 8px 8px;
+    box-shadow: 5px 5px 15px -5px rgba(5, 62, 97, 1);
+}
+
+.submenu-financeiro li {
+    padding: 8px 0;
+    margin-right: 100px;
+    width: 100%;
+}
+
+.submenu-financeiro li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 15px;
+    display: flex;
+    transition: background 0.5s;
+}
+
+.submenu-financeiro li a:hover {
+    background: #E18A52;
+    color: #053e61;
+}

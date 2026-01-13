@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+.container{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titulo {
+    max-width: 100%;
+    width: 100px;
+}
+.titulo strong {
+    color: #ecd447a2;
+}

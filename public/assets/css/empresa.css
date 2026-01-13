@@ -1,0 +1,21 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Garante que o corpo ocupe toda a altura da janela */
+    margin: 0; 
+    background-color: #042940; /* Fundo completamente azul */
+    color: white; /* Cor do texto */
+}
+
+.container {
+    background-color: #ffffff; /* Fundo da div */
+    border-radius: 10px; /* Bordas arredondadas */
+    color: black; /* Cor do texto dentro da div */
+}
